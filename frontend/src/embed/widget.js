@@ -10,15 +10,15 @@
             const scriptURL = scriptElement.src;
             scriptOrigin = new URL(scriptURL).origin;
         } catch (e) {
-            console.error('HiEvent widget error: Invalid script URL');
+            console.error('UrbanEvents widget error: Invalid script URL');
             return;
         }
 
-        const widgets = document.querySelectorAll('.hievents-widget');
+        const widgets = document.querySelectorAll('.urbanevents-widget');
         widgets.forEach((widget, index) => {
-            const eventId = widget.getAttribute('data-hievents-id');
+            const eventId = widget.getAttribute('data-urbanevents-id');
             if (!eventId) {
-                console.error('HiEvent widget error: data-hievents-id is required');
+                console.error('HiEvent widget error: data-urbanevents-id is required');
                 return;
             }
 
@@ -39,17 +39,17 @@
                 ' allow-presentation'
             );
 
-            iframe.setAttribute('title', 'Hi.Events Widget');
+            iframe.setAttribute('title', 'UrbanEvents Widget');
             iframe.style.border = 'none';
             iframe.style.width = '100%';
 
-            const iframeId = `hievents-iframe-${index}`;
+            const iframeId = `urbanevents-iframe-${index}`;
             iframe.id = iframeId;
 
             let src = `${scriptOrigin}/widget/${encodeURIComponent(eventId)}?iframeId=${iframeId}&`;
             const params = [];
             Array.from(widget.attributes).forEach(attr => {
-                if (attr.name.startsWith('data-hievents-') && attr.name !== 'data-hievents-id') {
+                if (attr.name.startsWith('data-urbanevents-') && attr.name !== 'data-urbanevents-id') {
                     const paramName = attr.name.substring(13).replace(/-([a-z])/g, (g) => g[1].toUpperCase());
                     params.push(`${paramName}=${encodeURIComponent(attr.value)}`);
                 }
@@ -59,7 +59,7 @@
 
             widget.appendChild(iframe);
 
-            const autoResize = widget.getAttribute('data-hievents-autoresize') !== 'false';
+            const autoResize = widget.getAttribute('data-urbanevents-autoresize') !== 'false';
 
             if (autoResize) {
                 window.addEventListener('message', (event) => {

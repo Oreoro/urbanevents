@@ -51,19 +51,19 @@ export const WidgetEditor = () => {
     useEffect(() => {
         setHtmlEmbedCode(
             '<div ' +
-            'data-hievents-id="' + eventId + '" ' +
-            'data-hievents-primary-color="' + form.values.primary_color + '" ' +
-            'data-hievents-primary-text-color="' + form.values.primary_text_color + '" ' +
-            'data-hievents-secondary-color="' + form.values.secondary_color + '" ' +
-            'data-hievents-secondary-text-color="' + form.values.secondary_text_color + '" ' +
-            'data-hievents-background-color="' + form.values.background_color + '" ' +
-            'data-hievents-widget-type="widget" ' +
-            'data-hievents-widget-version="1.0" ' +
-            'data-hievents-locale="en" ' +
-            'data-hievents-padding="' + form.values.padding + 'px" ' +
-            'data-hievents-autoresize="' + form.values.autoResize + '" ' +
-            'data-hievents-continue-button-text="' + form.values.continue_button_text + '" ' +
-            'class="hievents-widget">' +
+            'data-urbanevents-id="' + eventId + '" ' +
+            'data-urbanevents-primary-color="' + form.values.primary_color + '" ' +
+            'data-urbanevents-primary-text-color="' + form.values.primary_text_color + '" ' +
+            'data-urbanevents-secondary-color="' + form.values.secondary_color + '" ' +
+            'data-urbanevents-secondary-text-color="' + form.values.secondary_text_color + '" ' +
+            'data-urbanevents-background-color="' + form.values.background_color + '" ' +
+            'data-urbanevents-widget-type="widget" ' +
+            'data-urbanevents-widget-version="1.0" ' +
+            'data-urbanevents-locale="en" ' +
+            'data-urbanevents-padding="' + form.values.padding + 'px" ' +
+            'data-urbanevents-autoresize="' + form.values.autoResize + '" ' +
+            'data-urbanevents-continue-button-text="' + form.values.continue_button_text + '" ' +
+            'class="urbanevents-widget">' +
             '</div>'
         );
 
@@ -94,16 +94,16 @@ const HiEventsWidget = ({
 
   return (
     <div
-      data-hievents-id={eventId}
-      data-hievents-primary-color={primaryColor}
-      data-hievents-primary-text-color={primaryTextColor}
-      data-hievents-secondary-color={secondaryColor}
-      data-hievents-secondary-text-color={secondaryTextColor}
-      data-hievents-background-color={backgroundColor}
-      data-hievents-widget-type={widgetType}
-      data-hievents-widget-version={widgetVersion}
-      data-hievents-locale={locale}
-      className="hievents-widget"
+      data-urbanevents-id={eventId}
+      data-urbanevents-primary-color={primaryColor}
+      data-urbanevents-primary-text-color={primaryTextColor}
+      data-urbanevents-secondary-color={secondaryColor}
+      data-urbanevents-secondary-text-color={secondaryTextColor}
+      data-urbanevents-background-color={backgroundColor}
+      data-urbanevents-widget-type={widgetType}
+      data-urbanevents-widget-version={widgetVersion}
+      data-urbanevents-locale={locale}
+      className="urbanevents-widget"
     />
   );
 };

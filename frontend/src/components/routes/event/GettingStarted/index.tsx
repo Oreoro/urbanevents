@@ -66,7 +66,7 @@ const GettingStarted = () => {
                             {t`🎟️ Add tickets`}
                         </h2>
                         <p>
-                            {t`Create tickets for your event, set prices, and manage available quantity.`}
+                            {t`Create tickets and set prices for your event.`}
                         </p>
 
                         <Button variant={'light'} component={'a'} href={'/manage/event/' + eventId + '/tickets#create-ticket'}>
@@ -114,20 +114,7 @@ const GettingStarted = () => {
                             )}
                         {event?.status === 'LIVE' && <Check/>}
                     </Card>
-                    <Card>
-                        <h2>
-                            {t`💳 Connect with Stripe`}
-                        </h2>
-                        <p>
-                            {t`Connect your Stripe account to start receiving payments.`}
-                        </p>
-                        {!account?.stripe_connect_setup_complete && (
-                            <Button variant={'light'} component={'a'} href={'/account/payment'}>
-                                {t`Connect with Stripe`}
-                            </Button>)
-                        }
-                        {account?.stripe_connect_setup_complete && <Check/>}
-                    </Card>
+                    
                     <Card>
                         <h2>
                             {t`✉️ Confirm your email address`}

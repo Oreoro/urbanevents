@@ -62,13 +62,13 @@ export const Register = () => {
                         <TextInput
                             {...form.getInputProps('first_name')}
                             label={t`First Name`}
-                            placeholder={t`John`}
+                            placeholder={t`Abdullah`}
                             required
                         />
                         <TextInput
                             {...form.getInputProps('last_name')}
                             label={t`Last Name`}
-                            placeholder={t`Smith`}
+                            placeholder={t`Khan`}
                         />
                     </InputGroup>
 
@@ -95,7 +95,7 @@ export const Register = () => {
                         {...form.getInputProps('timezone')}
                         type="hidden"
                     />
-                    <Button type="submit" fullWidth disabled={mutate.isPending}>
+                    <Button type="submit" fullWidth disabled={mutate.isPending} className="black-button">
                         {mutate.isPending ? t`Working...` : t`Register`}
                     </Button>
                 </form>

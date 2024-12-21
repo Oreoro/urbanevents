@@ -54,7 +54,7 @@ const Login = () => {
             <Card>
                 <form onSubmit={form.onSubmit((values) => loginUser(values))}>
                     <TextInput {...form.getInputProps('email')} label={t`Email`}
-                               placeholder="hello@hi.events" required/>
+                               placeholder="hello@urbanevents.pk" required/>
                     <PasswordInput {...form.getInputProps('password')} label={t`Password`}
                                    placeholder={t`Your password`} required mt="md"/>
                     <p>
@@ -62,7 +62,7 @@ const Login = () => {
                             {t`Forgot password?`}
                         </NavLink>
                     </p>
-                    <Button type="submit" fullWidth loading={isPending} disabled={isPending}>
+                    <Button type="submit" fullWidth loading={isPending} disabled={isPending} className="black-button">
                         {isPending ? t`Logging in` : t`Log in`}
                     </Button>
                 </form>

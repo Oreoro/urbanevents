@@ -29,7 +29,7 @@ class ConfirmEmailAddressEmail extends BaseMail
     {
         return new Envelope(
             subject: __('Welcome to :app_name! Please confirm your email address', [
-                'app_name' => config('app.name'),
+                'app_name' => config('urbanevents'),
             ]),
         );
     }

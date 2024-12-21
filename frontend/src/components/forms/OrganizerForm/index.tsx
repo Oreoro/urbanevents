@@ -43,7 +43,7 @@ export const OrganizerForm = ({form}: { form: UseFormReturnType<Partial<Organize
                         label: key,
                     }))}
                     label={t`Currency`}
-                    placeholder={t`EUR`}
+                    placeholder={t`PKR`}
                     description={t`The default currency for your events.`}
                 />
                 <Select

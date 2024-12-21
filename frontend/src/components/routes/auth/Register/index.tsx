@@ -101,11 +101,8 @@ export const Register = () => {
                 </form>
                 <footer>
                     <Trans>
-                        By registering you agree to our <NavLink target={'_blank'}
-                                                                 to={'https://hi.events/terms-of-service?utm_source=app-register-footer'}>Terms
-                        of Service</NavLink> and <NavLink
-                        target={'_blank'}
-                        to={'https://hi.events/privacy-policy?utm_source=app-register-footer'}>Privacy Policy</NavLink>.
+                    By registering you agree to our Terms of Service and Privacy Policy.
+
                     </Trans>
                 </footer>
             </Card>

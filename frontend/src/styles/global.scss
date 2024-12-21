@@ -10,7 +10,6 @@
   --tk-color-gray-dark: #838383;
   --tk-color-money-black: #ffffff;
   --tk-color-money-green: #00b894;
-  --tk-color-black: rgba(0, 0, 0, 0.62);
   --tk-link-color: wh;
 
   --tk-color-white: #ffffff;
@@ -83,3 +82,9 @@ a1{
     //margin-bottom: 0;
   }
 }
+
+button {
+  --button-color: #000 !important;
+  color: white !important;
+}
+

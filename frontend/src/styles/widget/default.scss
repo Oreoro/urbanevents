@@ -10,7 +10,7 @@
  
   }
     button {
-    color: var(--widget-primary-text-color, var(--tk-primary));
+    color: var(--widget-primary-text-color, var(--tk-color-primary));
     }
 
   .hi-ticket-rows {
@@ -178,7 +178,7 @@
 
     .hi-continue-button {
       background-color: var(--widget-secondary-color, var(--tk-primary));
-      color: var(--widget-secondary-text-color, var(--tk-color-white));
+      color: var(--widget-secondary-text-color, var(--tk-primary));
     }
   }
 

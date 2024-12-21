@@ -1,11 +1,13 @@
 services:
   all-in-one:
     build:
-      context: ./../../
+      context: ./../../  # Adjust this path as necessary
       dockerfile: Dockerfile.all-in-one
+    platform: linux/amd64  # Specify target architecture for the build
     container_name: all-in-one
+    image: oreoro/urban2:latest  # Image name and tag
     ports:
-      - "8123:80"
+      - "8123:80"  # Map port 80 in the container to port 8123 on the host
     environment:
       - VITE_FRONTEND_URL=${VITE_FRONTEND_URL}
       - VITE_API_URL_CLIENT=${VITE_API_URL_CLIENT}
@@ -25,14 +27,14 @@ services:
       - postgres
 
   postgres:
-    image: postgres:latest
+    image: postgres:latest  # Use the latest version of PostgreSQL
     container_name: postgres
     environment:
       POSTGRES_DB: hi-events
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data  # Persist database data
 
 volumes:
   pgdata:

@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile.all-in-one
     platform: linux/amd64  # Specify target architecture for the build
     container_name: all-in-one
-    image: oreoro/urban4:latest  # Image name and tag
+    image: oreoro/urban5:latest  # Image name and tag
     ports:
       - "8123:80"  # Map port 80 in the container to port 8123 on the host
     environment:

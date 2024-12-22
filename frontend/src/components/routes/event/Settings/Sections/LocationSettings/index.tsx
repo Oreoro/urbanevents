@@ -88,7 +88,7 @@ export const LocationSettings = () => {
                 <fieldset disabled={eventSettingsQuery.isLoading || updateMutation.isPending}>
                     <Switch
                         {...form.getInputProps('is_online_event', {type: 'checkbox'})}
-                        label={t`This is an online event`}
+                        label={t`This is an online event`} 
                     />
 
                     {form.values.is_online_event && (
@@ -153,7 +153,7 @@ export const LocationSettings = () => {
                         </>
                     )}
 
-                    <Button loading={updateMutation.isPending} type={'submit'}>
+                    <Button loading={updateMutation.isPending} type={'submit'} className="black-button">
                         {t`Save`}
                     </Button>
                 </fieldset>

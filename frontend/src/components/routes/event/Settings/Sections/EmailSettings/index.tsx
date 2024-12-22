@@ -76,7 +76,7 @@ export const EmailSettings = () => {
                         description={t`If enabled, the organizer will receive an email notification when a new order is placed`}
                     />
 
-                    <Button loading={updateMutation.isPending} type={'submit'}>
+                    <Button loading={updateMutation.isPending} type={'submit'} className="black-button">
                         {t`Save`}
                     </Button>
                 </fieldset>

@@ -7,7 +7,7 @@
   --tk-secondary-text: #000000;
   --tk-color-gray: #f7f6f8;
   --tk-color-gray-2: #e2e2e2;
-  --tk-color-gray-dark: #838383;
+  --tk-color-gray-dark: #b2abab;
   --tk-color-money-black: #ffffff;
   --tk-color-money-green: #00b894;
   --tk-link-color: wh;
@@ -83,11 +83,44 @@ a1{
   }
 }
 
-button {
-  --button-color: #000 !important;
-  color: white !important;
-}
+
+
 
 .black-button {
-  color: black !important; /* Set text color to white and make it important */
+  background-color: black !important; /* Set background color to black */
+  color: white;            /* Set text color to white */
 }
+
+.black-button:hover {
+  background-color: black; /* Keep background black on hover */
+  color: white;            /* Keep text color white on hover */
+}
+
+
+
+/* Change the background color of the switch track */
+.mantine-Switch-track {
+  background-color: black; /* Default background color */
+  border-radius: 20px; /* Optional: for rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change the track color when checked */
+.mantine-Switch-input:checked + .mantine-Switch-track {
+  background-color: black; /* Background when checked */
+}
+
+/* Optional: Change thumb color when checked */
+.mantine-Switch-input:checked + .mantine-Switch-track .mantine-Switch-thumb {
+  background-color: white; /* Change thumb color when checked */
+}
+
+
+.custom-button {
+  background-color: black; /* Set background color to black */
+  color: white;            /* Set text color to white */
+  border: none;            /* Remove default border */
+  padding: 10px 20px;     /* Optional: add padding */
+  cursor: pointer;         /* Change cursor to pointer */
+}
+

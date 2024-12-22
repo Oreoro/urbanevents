@@ -1,5 +1,5 @@
-import {modals} from "@mantine/modals";
-import {t} from "@lingui/macro";
+import { modals } from "@mantine/modals";
+import { t } from "@lingui/macro";
 
 export const confirmationDialog = (
     message: string,
@@ -8,7 +8,8 @@ export const confirmationDialog = (
 ) => {
     modals.openConfirmModal({
         title: message,
-        labels: labels || {confirm: t`Confirm`, cancel: t`Cancel`},
+        labels: labels || { confirm: t`Confirm`, cancel: t`Cancel` },
         onConfirm: () => onConfirm(),
+        confirmProps: { color: 'black' },  // Change 'red' to your desired color
     });
 }

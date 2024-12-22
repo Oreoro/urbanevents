@@ -139,7 +139,7 @@ const HomepageDesigner = () => {
                                 label={t`Continue button text`}
                                 {...form.getInputProps('continue_button_text')}
                             />
-                            <Button loading={updateMutation.isPending} type={'submit'}>
+                            <Button loading={updateMutation.isPending} type={'submit'} className= "black-button">
                                 {t`Save Changes`}
                             </Button>
                         </fieldset>

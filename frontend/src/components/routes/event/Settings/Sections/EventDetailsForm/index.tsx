@@ -98,7 +98,7 @@ export const EventDetailsForm = () => {
                             data={currenciesMap}
                             {...form.getInputProps('currency')}
                             label={t`Currency`}
-                            placeholder={t`EUR`}
+                            placeholder={`PKR`}
                             disabled
                         />
 
@@ -110,7 +110,7 @@ export const EventDetailsForm = () => {
                             placeholder={t`UTC`}
                         />
                     </InputGroup>
-                    <Button loading={updateMutation.isPending} type={'submit'}>
+                    <Button loading={updateMutation.isPending} type={'submit'} className="black-button">
                         {t`Save`}
                     </Button>
                 </fieldset>

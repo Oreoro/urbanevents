@@ -81,7 +81,7 @@ export const SeoSettings = () => {
                         description={t`Allow search engines to index this event`}
                         label={t`Allow search engine indexing`}
                     />
-                    <Button loading={updateMutation.isPending} type={'submit'}>
+                    <Button loading={updateMutation.isPending} type={'submit'} className="black-button">
                         {t`Save`}
                     </Button>
 

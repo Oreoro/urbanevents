@@ -90,7 +90,7 @@ export const MiscSettings = () => {
                         description={t`Hide the getting started page from the sidebar`}
                     />
 
-                    <Button loading={updateMutation.isPending} type={'submit'}>
+                    <Button loading={updateMutation.isPending} type={'submit'} className="black-button">
                         {t`Save`}
                     </Button>
                 </fieldset>

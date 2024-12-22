@@ -83,7 +83,7 @@ export const HomepageAndCheckoutSettings = () => {
                         {...form.getInputProps('order_timeout_in_minutes')}
                     />
 
-                    <Button loading={updateMutation.isPending} type={'submit'}>
+                    <Button loading={updateMutation.isPending} type={'submit'} className="black-button">
                         {t`Save`}
                     </Button>
                 </fieldset>

@@ -30,7 +30,7 @@ export const OrganizerForm = ({form}: { form: UseFormReturnType<Partial<Organize
                 <TextInput
                     {...form.getInputProps('email')}
                     label={t`Email`}
-                    placeholder={t`hello@awesome-events.com`}
+                    placeholder={`hello@urbanevents.pk`}
                 />
             </InputGroup>
             <InputGroup>

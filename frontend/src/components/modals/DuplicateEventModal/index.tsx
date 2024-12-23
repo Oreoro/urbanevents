@@ -133,7 +133,7 @@ export const DuplicateEventModal = ({onClose, eventId}: DuplicateEventModalProps
                         />
                     </Card>
                 </fieldset>
-                <Button type="submit" fullWidth disabled={mutation.isPending}>
+                <Button type="submit" fullWidth disabled={mutation.isPending} classname="black-button">
                     {mutation.isPending ? t`Working...` : t`Duplicate Event`}
                 </Button>
             </form>

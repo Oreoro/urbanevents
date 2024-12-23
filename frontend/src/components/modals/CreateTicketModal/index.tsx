@@ -86,7 +86,7 @@ export const CreateTicketModal = ({onClose}: GenericModalProps) => {
         >
             <form onSubmit={form.onSubmit((values) => mutation.mutate(values as any as Ticket))}>
                 <TicketForm form={form}/>
-                <Button type="submit" fullWidth disabled={mutation.isPending}>
+                <Button type="submit" fullWidth disabled={mutation.isPending} classname="black-button">
                     {mutation.isPending ? t`Working...` : t`Create Ticket`}
                 </Button>
             </form>

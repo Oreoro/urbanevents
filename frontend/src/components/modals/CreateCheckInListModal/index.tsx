@@ -75,6 +75,7 @@ export const CreateCheckInListModal = ({onClose}: GenericModalProps) => {
                         type={'submit'}
                         fullWidth
                         loading={createMutation.isPending}
+                        styles={{ root: { backgroundColor: 'black', color: 'white' } }}
                     >
                         {t`Create Check-In List`}
                     </Button>

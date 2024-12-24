@@ -226,7 +226,7 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                             )}/>
 
                     <Button mt={20} loading={sendMessageMutation.isPending} type={'submit'} fullWidth
-                            leftSection={<IconSend/>}>
+                            leftSection={<IconSend/>} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                         {form.values.is_test ? t`Send Test` : t`Send`}
                     </Button>
                 </fieldset>

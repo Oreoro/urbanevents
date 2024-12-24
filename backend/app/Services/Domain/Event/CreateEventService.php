@@ -132,13 +132,13 @@ class CreateEventService
 
         $this->eventSettingsRepository->create([
             'event_id' => $event->getId(),
-            'homepage_background_color' => '#ffffff',
-            'homepage_primary_text_color' => '#000000',
-            'homepage_primary_color' => '#7b5db8',
-            'homepage_secondary_text_color' => '#ffffff',
-            'homepage_secondary_color' => '#7b5eb9',
+            'homepage_background_color' => '#F9F9F9',
+            'homepage_primary_text_color' => '#333333',
+            'homepage_primary_color' => '#003366',
+            'homepage_secondary_text_color' => '#4B4B4B',
+            'homepage_secondary_color' => '#008080',
             'homepage_background_type' => HomepageBackgroundType::COLOR->name,
-            'homepage_body_background_color' => '#7a5eb9',
+            'homepage_body_background_color' => '#EAEAEA',
             'continue_button_text' => __('Continue'),
             'support_email' => $organizer->getEmail(),
         ]);

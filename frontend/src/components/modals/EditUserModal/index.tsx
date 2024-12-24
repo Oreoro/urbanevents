@@ -84,7 +84,7 @@ export const EditUserModal = ({onClose, user}: EditUserModalProps) => {
                     />
 
                     {user.is_account_owner && (
-                        <Alert mb={20}>
+                        <Alert mb={20} styles={{ root: { backgroundColor: 'white' } }}>
                             {t`You cannot edit the role or status of the account owner.`}
                         </Alert>
                     )}

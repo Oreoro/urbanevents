@@ -74,6 +74,7 @@ export const CreateCapacityAssignmentModal = ({onClose}: GenericModalProps) => {
                         type={'submit'}
                         fullWidth
                         loading={createMutation.isPending}
+                        styles={{ root: { backgroundColor: 'black', color: 'white' } }}
                     >
                         {t`Create Capacity Assignment`}
                     </Button>

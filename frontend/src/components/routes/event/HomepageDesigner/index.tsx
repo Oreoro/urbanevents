@@ -28,7 +28,7 @@ const HomepageDesigner = () => {
 
     const form = useForm({
         initialValues: {
-            homepage_background_color: '#fff',
+            homepage_background_color: '#F9F9F9',
             homepage_primary_color: '#444',
             homepage_primary_text_color: '#000000',
             homepage_secondary_color: '#444',

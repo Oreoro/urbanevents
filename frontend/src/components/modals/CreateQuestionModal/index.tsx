@@ -69,7 +69,7 @@ export const CreateQuestionModal = ({onClose, onCompleted}: CreateQuestionModalP
         >
             <form onSubmit={form.onSubmit((values) => mutation.mutate(values as any as Question))}>
                 <QuestionForm form={form} tickets={tickets}/>
-                <Button loading={mutation.isPending} type="submit" fullWidth mt="xl">
+                <Button loading={mutation.isPending} type="submit" fullWidth mt="xl" styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                     {mutation.isPending ? t`Working...` : t`Create Question`}
                 </Button>
             </form>

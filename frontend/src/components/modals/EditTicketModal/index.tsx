@@ -98,7 +98,7 @@ export const EditTicketModal = ({onClose, ticketId}: GenericModalProps & { ticke
                 <TicketForm ticket={ticket} form={form}/>
                 <LoadingMask/>
 
-                <Button type="submit" fullWidth mt="xl" disabled={mutation.isPending}>
+                <Button type="submit" fullWidth mt="xl" disabled={mutation.isPending} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                     {mutation.isPending ? t`Working...` : t`Edit Ticket`}
                 </Button>
             </form>

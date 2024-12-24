@@ -125,7 +125,7 @@ export const EditAttendeeModal = ({onClose, attendeeId}: EditAttendeeModalProps)
                     />
                 )}
 
-                <Button type="submit" fullWidth mt="xl" disabled={mutation.isPending}>
+                <Button type="submit" fullWidth mt="xl" disabled={mutation.isPending} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                     {mutation.isPending ? t`Working...` : t`Edit Attendee`}
                 </Button>
             </form>

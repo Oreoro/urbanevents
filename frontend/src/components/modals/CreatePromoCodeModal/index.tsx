@@ -52,7 +52,7 @@ export const CreatePromoCodeModal = ({onClose}: GenericModalProps) => {
         >
             <form onSubmit={form.onSubmit(handleSubmit)}>
                 <PromoCodeForm form={form}/>
-                <Button type="submit" fullWidth mt="xl" disabled={mutation.isPending}>
+                <Button type="submit" fullWidth mt="xl" disabled={mutation.isPending} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                     {mutation.isPending ? t`Working...` : t`Create Promo Code`}
                 </Button>
             </form>

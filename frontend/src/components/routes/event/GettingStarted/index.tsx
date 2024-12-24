@@ -66,7 +66,7 @@ const GettingStarted = () => {
                             {t`🎟️ Add tickets`}
                         </h2>
                         <p>
-                            {t`Create tickets and set prices for your event.`}
+                            Create tickets and set prices for your event.
                         </p>
 
                         <Button variant={'light'} component={'a'} href={'/manage/event/' + eventId + '/tickets#create-ticket'}>

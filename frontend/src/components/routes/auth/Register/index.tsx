@@ -62,13 +62,13 @@ export const Register = () => {
                         <TextInput
                             {...form.getInputProps('first_name')}
                             label={t`First Name`}
-                            placeholder={t`Abdullah`}
+                            placeholder= "Abdullah"
                             required
                         />
                         <TextInput
                             {...form.getInputProps('last_name')}
                             label={t`Last Name`}
-                            placeholder={t`Khan`}
+                            placeholder= "Khan"
                         />
                     </InputGroup>
 
@@ -99,11 +99,8 @@ export const Register = () => {
                         {mutate.isPending ? t`Working...` : t`Register`}
                     </Button>
                 </form>
-                <footer>
-                    <Trans>
+                <footer>   
                     By registering you agree to our Terms of Service and Privacy Policy.
-
-                    </Trans>
                 </footer>
             </Card>
         </>

@@ -122,7 +122,7 @@ export const ManageProfile = () => {
                                         {t`If you did not request this change, please immediately change your password.`}
                                     </p>
                                     <p>
-                                        <Button onClick={handleCancelEmailChange} size={'xs'}>
+                                        <Button onClick={handleCancelEmailChange} size={'xs'} styles={{ root: { backgroundColor: 'black', color: 'white' } }} >
                                             {t`Cancel email change`}
                                         </Button>
                                     </p>
@@ -140,7 +140,7 @@ export const ManageProfile = () => {
                                         <Alert variant="light" mb={10}
                                                title={t`Email not verified`} icon={<IconInfoCircle/>}>
                                             <p>{t`Please verify your email address to access all features`}</p>
-                                            <Button size={'xs'} onClick={handleEmailConfirmationResend}>
+                                            <Button size={'xs'} onClick={handleEmailConfirmationResend} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                                                 {resendEmailConfirmationMutation.isPending ? t`Resending...` : t`Resend email confirmation`}
                                             </Button>
                                         </Alert>
@@ -174,7 +174,7 @@ export const ManageProfile = () => {
                                     />
 
                                     <Button fullWidth loading={mutation.isPending}
-                                            type={'submit'}>{t`Update profile`}</Button>
+                                            type={'submit'}>{t`Update profile`} styles={{ root: { backgroundColor: 'black', color: 'white' } }}</Button>
                                 </fieldset>
                             </form>
                         </div>
@@ -197,7 +197,7 @@ export const ManageProfile = () => {
                                         required
                                         {...passwordForm.getInputProps('password_confirmation')}
                                         label={t`Confirm New Password`}/>
-                                    <Button fullWidth loading={mutation.isPending}
+                                    <Button fullWidth loading={mutation.isPending} styles={{ root: { backgroundColor: 'black', color: 'white' } }}
                                             type={'submit'}>{t`Change password`}</Button>
                                 </fieldset>
                             </form>

@@ -72,6 +72,7 @@ export const InviteUserModal = ({onClose}: GenericModalProps) => {
                     loading={createMutation.isPending}
                     type={'submit'}>
                     {t`Invite User`}
+                    styles={{ root: { backgroundColor: 'black', color: 'white' } }}
                 </Button>
             </form>
         </Modal>

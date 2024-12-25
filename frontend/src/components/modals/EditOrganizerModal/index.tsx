@@ -67,6 +67,7 @@ export const EditOrganizerModal = ({organizerId, onClose}: EditOrganizerModalPro
                 <Group gap={10}>
                     <Button fullWidth loading={organizerMutation.isPending}
                             type={'submit'}
+                            styles={{ root: { backgroundColor: 'black', color: 'white' } }}
                     >{t`Save Organizer`}
                     </Button>
                 </Group>

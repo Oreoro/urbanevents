@@ -71,8 +71,8 @@ const AccountSettings = () => {
                             }))}
                             {...form.getInputProps('currency_code')}
                             label={t`Currency`}
-                            placeholder={t`PKR`}
-                            description={t`The default currency for your events.`}
+                            placeholder="PKR"
+                            description="The default currency for your events."
                         />
                         <Select
                             mb={0}

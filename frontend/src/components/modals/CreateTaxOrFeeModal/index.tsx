@@ -45,6 +45,7 @@ export const CreateTaxOrFeeModal = ({ onClose }: GenericModalProps) => {
                     fullWidth
                     loading={createMutation.isPending}
                     type={'submit'}>
+                    styles={{ root: { backgroundColor: 'black', color: 'white' } }}   
                     <Trans>Create {form.values.type === TaxAndFeeType.Tax ? t`Tax` : t`Fee`}</Trans>
                 </Button>
             </form>

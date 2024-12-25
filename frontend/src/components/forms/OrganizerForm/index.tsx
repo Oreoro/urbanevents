@@ -44,7 +44,7 @@ export const OrganizerForm = ({form}: { form: UseFormReturnType<Partial<Organize
                     }))}
                     label={t`Currency`}
                     placeholder="PKR"
-                    description={t`The default currency for your events.`}
+                    description="The default currency for your events."
                 />
                 <Select
                     {...form.getInputProps('timezone')}

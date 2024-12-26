@@ -150,7 +150,7 @@ export const CreateEventModal = ({onClose, organizerId}: CreateEventModalProps) 
                                label={t`End Date`}
                     />
                 </SimpleGrid>
-                <Button loading={eventMutation.isPending} mt={20} fullWidth type={'submit'} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
+                <Button loading={eventMutation.isPending} mt={20} fullWidth styles={{ root: { backgroundColor: 'black', color: 'white' } }} type={'submit'}>
                     {t`Continue Event Setup`}
                 </Button>
             </form>

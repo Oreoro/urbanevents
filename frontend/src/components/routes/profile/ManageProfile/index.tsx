@@ -174,7 +174,7 @@ export const ManageProfile = () => {
                                     />
 
                                     <Button fullWidth loading={mutation.isPending}
-                                            type={'submit'}>{t`Update profile`} styles={{ root: { backgroundColor: 'black', color: 'white' } }}</Button>
+                                            type={'submit'} styles={{ root: { backgroundColor: 'black', color: 'white' } }}>{t`Update profile`} </Button>
                                 </fieldset>
                             </form>
                         </div>

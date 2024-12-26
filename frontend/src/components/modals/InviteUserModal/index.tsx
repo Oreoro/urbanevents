@@ -70,9 +70,9 @@ export const InviteUserModal = ({onClose}: GenericModalProps) => {
                 <Button
                     fullWidth
                     loading={createMutation.isPending}
-                    type={'submit'}>
+                    type={'submit'}
+                    styles={{ root: { backgroundColor: 'black', color: 'white' } }}>
                     {t`Invite User`}
-                    styles={{ root: { backgroundColor: 'black', color: 'white' } }}
                 </Button>
             </form>
         </Modal>

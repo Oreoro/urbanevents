@@ -112,7 +112,7 @@ const EventLayout = () => {
         <div id={'event-manage-container'} className={`${classes.container} ${sidebarOpen ? classes.closed : ''}`}>
             <div className={`${classes.topBar}`}>
                 <div className={classes.burger}>
-                    <Burger color={'#fff'} opened={sidebarOpen} onClick={() => setSidebarOpen(!sidebarOpen)}
+                    <Burger color={'black'} opened={sidebarOpen} onClick={() => setSidebarOpen(!sidebarOpen)}
                             size={'sm'}/>
                 </div>
                 <div className={classes.logo}>
